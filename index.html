@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>avsingh.com — choose a variant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;1,9..144,300&family=Schibsted+Grotesk:wght@500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #0e1424;
+      --ink-soft: rgba(14, 20, 36, 0.78);
+      --paper: #f3ede0;
+      --paper-deep: #e8e0cf;
+      --ember: #d96f32;
+      --mute: #6b6657;
+      --max: 720px;
+      --gutter: clamp(20px, 5vw, 40px);
+      --serif: 'Fraunces', Georgia, serif;
+      --ui: 'Schibsted Grotesk', system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--ui);
+      background: var(--paper);
+      color: var(--ink);
+      padding: clamp(60px, 12vh, 120px) var(--gutter) 80px;
+      min-height: 100vh;
+    }
+    main { max-width: var(--max); margin: 0 auto; }
+    h1 {
+      font-family: var(--serif);
+      font-weight: 300;
+      font-size: clamp(36px, 5.5vw, 56px);
+      line-height: 1.08;
+      letter-spacing: -0.015em;
+      margin: 0 0 24px;
+    }
+    h1 em { font-style: italic; color: var(--ember); }
+    p.lede {
+      font-family: var(--serif);
+      font-size: 19px;
+      font-style: italic;
+      line-height: 1.55;
+      color: var(--ink-soft);
+      margin: 0 0 48px;
+      max-width: 36em;
+    }
+    .grid {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: 1fr;
+      margin: 0 0 48px;
+    }
+    @media (min-width: 720px) {
+      .grid { grid-template-columns: 1fr 1fr; gap: 28px; }
+    }
+    .card {
+      display: block;
+      padding: 32px 28px;
+      background: var(--paper-deep);
+      border: 1px solid var(--paper-deep);
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.5s cubic-bezier(0.22, 0.61, 0.21, 1);
+    }
+    .card:hover {
+      background: var(--paper);
+      border-color: var(--ember);
+    }
+    .card .label {
+      font-family: var(--ui);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--ember);
+      margin: 0 0 18px;
+    }
+    .card h2 {
+      font-family: var(--serif);
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin: 0 0 14px;
+    }
+    .card p {
+      font-family: var(--serif);
+      font-size: 15px;
+      line-height: 1.55;
+      color: var(--ink-soft);
+      margin: 0 0 18px;
+    }
+    .card .meta {
+      font-family: var(--ui);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--mute);
+    }
+    .card:hover .meta { color: var(--ember); }
+    .recommendation, .footer-note {
+      font-family: var(--ui);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--mute);
+      padding-top: 32px;
+      border-top: 1px solid var(--paper-deep);
+    }
+    .recommendation { margin-bottom: 16px; }
+    .recommendation a { color: var(--ember); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Two variants. <em>One recommendation.</em></h1>
+    <p class="lede">I built this twice. Same brief. Same palette, same type, same content. The difference: Variant B was built after writing a critical review of Variant A first. The critique-first pattern surfaced problems the direct build did not see.</p>
+    <div class="grid">
+      <a class="card" href="variant-a/">
+        <p class="label">Variant A — direct brief</p>
+        <h2>Positioning-first</h2>
+        <p>Heros on the thesis. Reads as a thoughtful designer's site. Treats the person as the second thing the reader meets.</p>
+        <p class="meta">→ View Variant A</p>
+      </a>
+      <a class="card" href="variant-b/">
+        <p class="label">Variant B — critique-then-redesign</p>
+        <h2>Person-first</h2>
+        <p>Opens with "I am Aditya." Treats the thesis as something the reader earns by staying. Asymmetric, direct, less quotable, more true.</p>
+        <p class="meta">→ View Variant B</p>
+      </a>
+    </div>
+    <p class="recommendation">Recommendation: Variant B. → <a href="variant-b/">Go directly to Variant B</a></p>
+    <p class="footer-note">Design rationale in <a href="references/design-direction.md" style="color:var(--ember);text-decoration:none;">design-direction.md</a> · <a href="references/critique-of-a.md" style="color:var(--ember);text-decoration:none;">critique-of-a.md</a></p>
+  </main>
+</body>
+</html>
