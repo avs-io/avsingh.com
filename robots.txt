@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /variant-a/
+Disallow: /variant-b/
+Disallow: /references/
+Disallow: /screenshots/
 
 Sitemap: https://avsingh.com/sitemap.xml

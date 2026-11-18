@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Million-Tendril Problem · Aditya Vikram Singh</title>
+  <meta name="description" content="A swarm that runs in parallel is not a swarm that learns." />
+  <link rel="canonical" href="https://avsingh.com/writing/the-million-tendril-problem/" />
+  <meta property="og:title" content="The Million-Tendril Problem" />
+  <meta property="og:description" content="A swarm that runs in parallel is not a swarm that learns." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://avsingh.com/writing/the-million-tendril-problem/" />
+  <meta property="og:image" content="https://avsingh.com/images/tendril-cover.jpg" />
+  <meta property="article:published_time" content="2026-11-18" />
+  <meta property="article:author" content="Aditya Vikram Singh" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The Million-Tendril Problem" />
+  <meta name="twitter:description" content="A swarm that runs in parallel is not a swarm that learns." />
+  <meta name="twitter:image" content="https://avsingh.com/images/tendril-cover.jpg" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "The Million-Tendril Problem",
+    "description": "A swarm that runs in parallel is not a swarm that learns.",
+    "datePublished": "2026-11-18",
+    "author": { "@type": "Person", "name": "Aditya Vikram Singh", "url": "https://avsingh.com/" },
+    "mainEntityOfPage": "https://avsingh.com/writing/the-million-tendril-problem/",
+    "image": "https://avsingh.com/images/tendril-cover.jpg"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#essay">Skip to the essay</a>
+  <main class="page">
+    <header class="essay-head">
+      <a class="back" href="/">Aditya Vikram Singh</a>
+      <p class="label">18 November 2026</p>
+      <h1>The <span class="keep">Million-Tendril</span> Problem</h1>
+      <p class="essay-dek">A swarm that runs in parallel is not a swarm that learns.</p>
+    </header>
+
+    <article class="essay" id="essay">
+      <p class="lede">A few months ago, in <a href="https://adityavikramsingh8.substack.com/p/the-universe-is-not-a-machine-its"><em>The Universe Is Not a Machine. It's a Mirror.</em></a>, I wrote about what happens when you take the observer problem seriously. Cosmology, consciousness and computation stop being three subjects and become one question.</p>
+      <p>Once you take that question seriously, you can't stay in philosophy. You end up trying to build it.</p>
+      <p>That is what I have been doing full-time at <a href="https://wakingmatter.com">Waking Matter</a>. Stated without hedging, the long-term ambition is a combined mind: a person, and a very large swarm of AI trajectories, thinking together and compounding.</p>
+
+      <figure class="plate">
+        <img src="/images/tendril-cover.jpg" width="1536" height="1024" alt="Black ink in water on warm paper. Fine filaments branch and mostly end. One filament crosses a gap and touches a separate branch." />
+        <figcaption>Most of them end. One crosses.</figcaption>
+      </figure>
+
+      <p>The picture I work from is ordinary. You are in the middle of something hard. Halfway through a thought, you wonder whether some property could be used another way. A real thinking partner would, before you finished the sentence, send out thousands of exploratory threads. I call them tendrils. Each one tests where its idea leads. The dead ends drop. What survives comes back into the next thought.</p>
+      <p>People are running swarms. Hundreds of agents, a search over branches, the logs poured into a shared database, and the result called collective intelligence. Most of what I have seen is stateless map-reduce with a bigger API bill. Each agent works alone, reports a score up the chain, and forgets. Tomorrow's run starts from zero.</p>
+      <p>The question I actually want answered is narrower than the ambition. When one tendril encounters a state, how does that update the priors of another tendril that does not share the same tree?</p>
+
+      <h2>A finding went to the wrong worker</h2>
+      <p>In one of our runs, a manuscript audit checked 1,162 claims and reran zero models. The second fact is the one that matters, and it is easy to miss if you are not the worker who needs it.</p>
+      <p>One worker was about to certify that more than a thousand claims had been checked. Another was about to call the audit an independent replication. A router picked up "zero reruns" and handed it to the first worker, who withdrew a certification that had been right. The second worker, the one the fact would have changed, never saw it.</p>
+      <p>Same finding. The words overlapped just enough to look like a match, and the consequence ran the other way.</p>
+
+      <figure class="plate">
+        <svg viewBox="0 0 720 280" role="img" aria-labelledby="fig1title">
+          <title id="fig1title">The finding reached the worker who did not need it</title>
+          <g fill="#1c1915" font-family="Source Serif 4, Iowan Old Style, Palatino, serif">
+            <text x="360" y="28" text-anchor="middle" font-size="20" font-weight="500">1,162 claims checked</text>
+            <text x="360" y="54" text-anchor="middle" font-size="20" font-weight="500">0 models rerun</text>
+          </g>
+          <path d="M338 68 C300 110, 118 112, 108 168" fill="none" stroke="#1c1915" stroke-width="1.35" />
+          <circle cx="108" cy="172" r="2.4" fill="#1c1915" />
+          <path d="M382 68 C460 108, 540 128, 575 168" fill="none" stroke="#b7ad9f" stroke-width="1.25" stroke-dasharray="2.2 4.2" />
+          <g font-family="Source Serif 4, Iowan Old Style, Palatino, serif">
+            <text x="36" y="206" font-size="17" font-weight="500" fill="#1c1915">Certifying the count</text>
+            <text x="36" y="230" font-size="14.5" fill="#6e665c">received "0 reruns"</text>
+            <text x="36" y="250" font-size="14.5" fill="#6e665c">withdrew a correct certification</text>
+            <text x="400" y="206" font-size="17" font-weight="500" fill="#1c1915">About to call it a replication</text>
+            <text x="400" y="230" font-size="14.5" fill="#6e665c">received nothing</text>
+          </g>
+        </svg>
+        <figcaption>One run. The finding reached the worker who did not need it.</figcaption>
+      </figure>
+
+      <p>This is the ordinary case. Discovery does not stay inside the branch where it happens. One tendril, off on its own problem, notices that a timestamp records when the data was collected, not when the event happened. Another tendril is three steps into a decision that depends on that timestamp, and is calling it when the outage started. They do not share a task, a search tree, or a vocabulary.</p>
+      <p>The second tendril cannot search for the fact. It does not know there is anything to search for. You cannot write a query for a blind spot you do not know you have.</p>
+
+      <h2>We tried sending it to everyone</h2>
+      <p>In a small pilot of 36 pending decisions, we broadcast one verified measurement to every worker. It rescued all seven whose decisions depended on it. It also flipped ten others, who changed course because of a fact that had nothing to do with them. The swarm got worse.</p>
+      <p>In our routing pilot, a keyword router scored 25 of 36. A router told the right recipients in advance scored 26. Keyword matching works when both sides use the same words. It fails when they don't, which is when you needed the connection.</p>
+      <p>The first half of the problem is knowing who a finding is for, including the worker who does not know to ask, and staying quiet for the rest.</p>
+
+      <h2>The worker kept the bug</h2>
+      <p>A billing worker was shown its own code. The code charged 67 credits for a transaction the ledger priced at 39. It had two chances to fix it. It kept the bug.</p>
+      <p>The finding had arrived. It was about the worker's own output. The worker did not update.</p>
+      <p>Most of what I read about swarms stops at delivery. Raise the retrieval score, widen the window, paste the fact into the prompt. A tendril can be handed the fact that falsifies its next action and still take the action. Getting a finding into an agent's thinking, rather than into its context, is the open part. It is also the part I least want to pretend we have solved.</p>
+
+      <h2>What has to hold</h2>
+      <p>Something has to notice which tendril needs a finding it did not ask for. Something has to withhold that finding from the tendrils it would only disturb. And the tendril that receives it has to be able to change its mind, including about a conclusion it has already started to defend.</p>
+      <p>Under that sits a duller requirement. If a bad claim gets picked up by more than one other agent before anyone checks it, the error spreads faster than you can clean it up. A swarm that reads its own outputs will do this unless influence is gated. An observation is not yet a conclusion, and a conclusion is not yet an instruction. When the evidence behind a conclusion breaks, the conclusion has to break with it.</p>
+      <p>One of the first things I built, for that reason, was <a href="https://github.com/avs-io/agent-memory-contracts">Agent Memory Contracts</a>. It draws a boundary between what was observed, what an agent wants to infer, and what it is allowed to treat as state. The code is public. It is the immune system, not the mind.</p>
+      <p>I also don't believe this works if you throw away the original record. A compression chosen before you know which distinction will matter will throw away the distinction. The raw evidence has to stay, so a later surprise can send you back to it. Our first paper is about that. I'll link it when it is public.</p>
+
+      <h2>The next run</h2>
+      <p>Hold the model weights fixed. On the next run, does the organism reach the right decision faster, with fewer false alarms and less compute, because of what it lived through?</p>
+      <p>In the early experiments, a router that had accumulated experience did no better than one we reset. "Why swarms don't learn yet" is a claim about a measurement, and so far the measurement says the experience is not yet doing any work.</p>
+      <p>If you are building swarm infrastructure, or decision models for open-ended discovery, and you have hit the same wall, write to me. I would rather compare notes with someone who has the failures.</p>
+      <p class="invite"><a href="mailto:hello@wakingmatter.com">hello@wakingmatter.com</a></p>
+
+      <footer class="colophon">
+        <p>First published 18 November 2026. The original is this page.</p>
+        <p>Also read <a href="https://adityavikramsingh8.substack.com/p/the-universe-is-not-a-machine-its"><em>The Universe Is Not a Machine. It's a Mirror.</em></a></p>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
